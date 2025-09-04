@@ -1,0 +1,136 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #e50914;
+  /* Netflix red */
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 4px;
+  width: 250px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+.button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.button-blue {
+  background-color: #1f80e0;
+  color: white;
+}
+
+.button-blue:hover {
+  background-color: #0b63c5;
+}
+
+.button-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.button-green:hover {
+  background-color: #218838;
+}
+
+.button-yellow {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.button-yellow:hover {
+  background-color: #e0a800;
+}
+
+.button-red {
+  background-color: #e50914;
+  color: white;
+}
+
+.button-red:hover {
+  background-color: #b20710;
+}
+
+.button-active {
+  background-color: #e50914;
+  color: white;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.movie-list {
+  padding: 0;
+  list-style: none;
+}
+
+.movie-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.movie-item:hover {
+  background-color: #333;
+}
+
+.movie-item span {
+  font-size: 1.1rem;
+  flex-grow: 1;
+}
+
+.movie-item .watched {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.movie-item .button {
+  margin-left: 10px;
+}
